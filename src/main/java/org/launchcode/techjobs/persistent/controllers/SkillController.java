@@ -35,7 +35,7 @@ public class SkillController {
         return "skills/add";
     }
 
-    @PostMapping
+    @PostMapping("add")
     public String processAddSkillForm(@ModelAttribute @Valid Skill newSkill,
                                       Errors errors,
                                       Model model) {
